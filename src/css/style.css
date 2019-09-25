@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    flex-basis: 100%;
+}
+
+.center {
+    flex-basis: 1140px;
+}
+
+header {
+    flex-basis: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0, .5);
+}
+
+header a {
+    margin-right: 30px;
+    color: blue;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:after {
+    content: '';
+    flex-basis: 100%;
+    height: 2px;
+    background: blue;
+    display: block;
+}
+
+/* footer {
+    flex-basis: 100%;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0, .5);
+} */
+
+aside {
+    flex-basis: 300px;
+    height: -moz-calc(100vh - 160px);
+    height: -webkit-calc(100vh - 160px);
+    height: calc(100vh - 160px);
+    border: 1px solid rgba(0,0,0, .5);
+}
+
+section {
+    flex-basis: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0, .5);
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content_center {
+    justify-content: center;
+}
+
+.justify-content_space-between {
+    justify-content: space-between;
+}
+
+.justify-content_flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content_flex-end {
+    justify-content: flex-end;
+}
+
+.align-items_center {
+    align-items: center;
+}
+
+.flex-wrap_wrap {
+    flex-wrap: wrap;
+}
+
+.flex-direction_column {
+    flex-direction: column;
+}
+
+.ov_hidden {
+    overflow: hidden;
+}
+
+.ov_scroll {
+    overflow: scroll;
+}
+
+.ov_auto {
+    overflow: auto;
+}
+
+.height {
+    height: -moz-calc(100vh - 160px);
+    height: -webkit-calc(100vh - 160px);
+    height: calc(100vh - 160px);
+}
+
+.clac-width {
+    flex-basis: calc(100% - 340px);
+}
+
+/*** login ***/
+
+.login-form {
+    flex-basis: 300px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+input[type=text],
+input[type=password],
+select  {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+button {
+    padding: 7px 5px;
+    margin: auto;
+    flex-basis: 120px;
+    text-align: center;
+}
+
+.box-shadow {
+    box-shadow: 0 0 4px rgba(0,0,0, .7);
+}
+
+/*** registration ***/
+
+option {
+    color: #000;
+}
+
+.gender div:first-child {
+    margin-right: 50px;
+}
+
+.submit-block {
+    margin-top: 70px;
+}
+
+button[type=submit] {
+    margin-right: 0;
+}
+
+/*** media query ***/
+
+@media all and (max-width: 600px) {
+
+    .content-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .height.clac-width.ov_auto {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    section {
+        flex-basis: 100%;
+    }
+
+    .submit-block {
+        flex-direction: row;
+    }
+}
+
+/* --- iPhone 6,7,8 landscape --- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+    
+    .clac-width {
+        flex-basis: calc(100% - 320px);
+    }
+
+    section {
+        flex-basis: 100%;
+    }
+
+}
+
+/* --- iphone X landscape --- */
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+
+    section {
+        flex-basis: 100%;
+    }
+
+}
+

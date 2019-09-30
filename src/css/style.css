@@ -189,6 +189,7 @@ article {
 .news-container {
     flex-basis: 100%;
     padding: 10px;
+	min-height: 300px;
     height: -moz-calc(100vh - 450px);
     height: -webkit-calc(100vh - 450px);
     height: calc(100vh - 450px);
@@ -199,6 +200,7 @@ article {
     height: 80px;
     border-radius: 50%;
     background: greenyellow;
+	margin-right: 20px;
 }
 
 .section-height {
@@ -226,6 +228,15 @@ article {
     .submit-block {
         flex-direction: row;
     }
+	
+	article {
+		flex-direction: column;
+		height: 150px;
+	}
+	
+	.news-container {
+		max-height: 300px;
+	}
 }
 
 /* --- iPhone 6,7,8 landscape --- */
